@@ -34,8 +34,8 @@ public class MyQueue<Item> implements Iterable<Item> {
     public Item dequeue(){
         Item item = first.item;
         first = first.next;
-        if(isEmpty()) last = null;
         N--;
+        if(isEmpty()) last = null;
         return item;
     }
     public Iterator<Item> iterator(){
